@@ -9,7 +9,9 @@ class UsersController extends Controller
 {
     public function index()
     {
-        return 'Controller';
+        $client = new \GuzzleHttp\Client(['base_uri' => 'https://jsonplaceholder.typicode.com/']);
+        $response = $client->request('GET', 'posts');
+        dd(json_decode((string)$response->getBody(), true));
     }
 
     public function getUsers() {
