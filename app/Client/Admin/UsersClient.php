@@ -10,7 +10,7 @@ class UsersClient extends BaseClient
 {
     public function getUsers()
     {
-        $request = $this->getClient()->request('POST', 'user/select/');
+        $request = $this->getClient()->request('POST', 'user/select');
         return $this->getResult($request);
     }
 }

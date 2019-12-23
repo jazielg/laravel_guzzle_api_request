@@ -1,5 +1,5 @@
 <?php
 
 Route::group(['prefix' => 'users'], function() {
-    Route::get('/', 'admin\UsersController@index')->name('admin.users.index');
+    Route::get('/', 'Admin\UsersController@index')->name('admin.users.index');
 });

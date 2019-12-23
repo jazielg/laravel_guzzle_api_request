@@ -13,6 +13,12 @@
 
 require_once base_path() . '/routes/admin.php';
 
+Route::get('/example', 'Admin\UsersController@examplePlaceholder');
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
