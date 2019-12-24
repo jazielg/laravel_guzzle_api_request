@@ -6,8 +6,6 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Session;
 use App\Client\BaseClient;
-use Exception;
-use PhpParser\ErrorHandler\Throwing;
 
 class AuthClient extends BaseClient
 {
